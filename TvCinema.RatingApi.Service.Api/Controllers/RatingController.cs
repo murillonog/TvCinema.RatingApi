@@ -23,7 +23,7 @@ namespace TvCinema.RatingApi.Service.Api.Controllers
         {
             try
             {
-                var result = await _ratingService.GetById(imdbId);
+                var result = await _ratingService.GetByImdbId(imdbId);
                 return Ok(result);
             }
             catch (Exception ex)

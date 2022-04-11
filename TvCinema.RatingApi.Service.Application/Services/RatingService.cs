@@ -22,7 +22,7 @@ namespace TvCinema.RatingApi.Service.Application.Services
             _ratingRepository = ratingRepository;
         }
 
-        public async Task<RatingsDto> GetById(string imdbId)
+        public async Task<RatingsDto> GetByImdbId(string imdbId)
         {
             try
             {
